@@ -55,7 +55,7 @@ public class receiver extends HttpServlet {
 			if (!store.connection_ready)
 			out.println("\n connection is not established ! " + "\n " + store.ERROR_CODE);
 
-			out.println("complete");
+			out.println("complete yea!");
 
 
 		
