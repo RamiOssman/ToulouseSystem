@@ -44,7 +44,7 @@ public class R {
       
          public static final String PDFDirectory   = "/var/www/clients/client1/web7/web/library/pdfDir" ; 
     
-       public static final String FontDirectory = "../resources/arabic.ttf" ; 
+       public static final String FontDirectory = "system/arabic.ttf" ; 
     
     //  public static final String FontDirectory = "var/www/clients/client1/web7/private/data/arabic.ttf" ; 
     

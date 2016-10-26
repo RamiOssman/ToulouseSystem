@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.pdf.BaseFont;
+
 import system.sqlStore;
 import system.textManager;
 
@@ -55,9 +59,6 @@ public class receiver extends HttpServlet {
 			if (!store.connection_ready)
 			out.println("\n connection is not established ! " + "\n " + store.ERROR_CODE);
 
-
-
-
 		
 	}
 
@@ -68,5 +69,6 @@ public class receiver extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
+
 
 }

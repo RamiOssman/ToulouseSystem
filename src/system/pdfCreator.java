@@ -113,9 +113,9 @@ public class pdfCreator {
 			// p.add(new Phrase(dest));
 
 			ColumnText canvas = new ColumnText(writer.getDirectContent());
-			canvas.setAlignment(writer.RUN_DIRECTION_RTL);
+			canvas.setAlignment(PdfWriter.RUN_DIRECTION_RTL);
 			canvas.setSimpleColumn(72, 72, 612 - 72, 792 - 72);
-			canvas.setRunDirection(PdfWriter.RUN_DIRECTION_LTR);
+			canvas.setRunDirection(PdfWriter.RUN_DIRECTION_RTL);
 			if (x == 0) {
 				Phrase p = new Phrase("Chapitre " + ChapiterNb + ": " + Title, font);
 				addEmptyLine(p, 2);
