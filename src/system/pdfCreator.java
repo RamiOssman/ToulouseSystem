@@ -9,6 +9,7 @@ import java.io.OutputStream;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Phrase;
@@ -122,7 +123,9 @@ public class pdfCreator {
 				canvas.addElement(p);
 			}
 			canvas.addElement(new Paragraph(" "));
-			canvas.addElement(new Paragraph(dest, font));
+			Paragraph ps = new Paragraph(dest , font) ; 
+			ps.setAlignment(Element.ALIGN_LEFT);
+			canvas.addElement(ps);
 
 			canvas.go();
 
